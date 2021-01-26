@@ -3,7 +3,7 @@
 This module separates logic of multiple channels from app busyness logic. Realized example channels for viber (messaging-api-viber) and telegram (node-telegram-bot-api).
 
 ## Scheme of usage 
-```
+`````javascript
 const {
     loader: channelStrategySelectorLoader
 } = require('./channel-strategy-selector/index.js');
@@ -31,4 +31,4 @@ async function messageHandler(channelName, msg) {
     const parsedResult = await channel.parseMessage(msg);
     //busyness logic independed of channels code
 };
-```
+`````

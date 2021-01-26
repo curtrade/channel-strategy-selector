@@ -18,14 +18,14 @@ const channelStrategySelector = channelStrategySelectorLoader([
 ])
 
 channel1Bot.on('message', (msg) => {
-    customHandler('channel1', msg);
+    messageHandler('channel1', msg);
 });
 channel2Bot.on('message', (msg) => {
-    customHandler('channel2', msg);
+    messageHandler('channel2', msg);
 });
 //...
 
-function customHandler(channelName, msg) {
+function messageHandler(channelName, msg) {
     const channel = channelStrategySelector.select(channelName);
     const parsedResult = await channel.parseMessage(msg);
     //...busyness logic independed of channels code...

@@ -10,6 +10,7 @@ const {
 
 const channel1Bot = <... bot1 configuration>
 const channel2Bot = <... bot2 configuration>
+//...
 
 const channelStrategySelector = channelStrategySelectorLoader([
     { name: 'channel1', instance: channel1Bot },
@@ -28,6 +29,6 @@ channel2Bot.on('message', (msg) => {
 async function messageHandler(channelName, msg) {
     const channel = channelStrategySelector.select(channelName);
     const parsedResult = await channel.parseMessage(msg);
-    //...busyness logic independed of channels code...
+    //busyness logic independed of channels code
 };
 ```

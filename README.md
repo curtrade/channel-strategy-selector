@@ -8,8 +8,8 @@ const {
     loader: channelStrategySelectorLoader
 } = require('./channel-strategy-selector/index.js');
 
-const channel1Bot = <... bot1 configuration>
-const channel2Bot = <... bot2 configuration>
+const channel1Bot = {}; //bot1 configuration
+const channel2Bot = {}; //bot2 configuration
 //...
 
 const channelStrategySelector = channelStrategySelectorLoader([

@@ -25,7 +25,7 @@ channel2Bot.on('message', (msg) => {
 });
 //...
 
-function messageHandler(channelName, msg) {
+async function messageHandler(channelName, msg) {
     const channel = channelStrategySelector.select(channelName);
     const parsedResult = await channel.parseMessage(msg);
     //...busyness logic independed of channels code...

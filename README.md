@@ -1,6 +1,6 @@
 # channel-strategy-selector
 
-This module separates logic of multiple channels from app busyness logic. Realized example channels for viber (messaging-api-viber) and telegram (node-telegram-bot-api).
+This module separates logic of multiple channels from app business logic. Realized example channels for viber (messaging-api-viber) and telegram (node-telegram-bot-api).
 
 ## Scheme of usage 
 `````javascript
